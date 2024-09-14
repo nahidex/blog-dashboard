@@ -75,7 +75,59 @@
         </div>
       </div>
 
-      <div class="container-fluid"></div>
+      <div class="container-fluid">
+        <div class="bd-top-nav">
+          <div class="bd-top-nav-search">
+            <div class="input-group">
+              <span class="input-group-text" id="nav-search">
+                <img src="images/icons/search.svg" alt="" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for anything.."
+                aria-label="Search"
+                aria-describedby="nav-search"
+              />
+            </div>
+          </div>
+          <div class="bd-top-nav-calender">
+            <button type="button" class="btn btn-link bd-btn-link">
+              <img
+                class="calendar-icon"
+                src="images/icons/calendar.svg"
+                alt=""
+              />
+              <span class="day">Today </span>
+              <span>October 29</span>
+              <img
+                class="chevron-down"
+                src="images/icons/chevron-down.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="bd-top-nav-userinfo">
+            <button class="btn btn-link bd-btn-link notification">
+              <img src="images/icons/bell.svg" alt="" />
+              <span>8</span>
+            </button>
+            <button
+              data-bs-toggle="dropdown"
+              class="btn btn-link bd-btn-link user-dropdown"
+            >
+              <img src="images/avatar.png" alt="" />
+              <img src="images/icons/chevron-down.svg" alt="" />
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end bd-dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

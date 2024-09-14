@@ -1,0 +1,69 @@
+.bd-top-nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-search {
+    .input-group {
+      span,
+      input {
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        &::placeholder {
+          color: $gray-400;
+        }
+      }
+      span {
+        padding: 0;
+      }
+    }
+  }
+  &-calender {
+    .bd-btn-link {
+      .calendar-icon {
+        width: 1rem;
+        height: auto;
+      }
+      .day {
+        color: $gray-400;
+      }
+      .chevron-down {
+        width: 1rem;
+      }
+    }
+  }
+  &-userinfo {
+    display: flex;
+    .notification {
+      position: relative;
+      span {
+        position: absolute;
+        background: $blue;
+        color: $white;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        line-height: 1rem;
+        right: 0px;
+        top: 0px;
+        font-size: 10px;
+      }
+    }
+    .user-dropdown {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .bd-top-nav-search {
+    display: none;
+  }
+}

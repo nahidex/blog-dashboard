@@ -1,3 +1,31 @@
 body {
   background: $gray-50;
 }
+
+@include media-breakpoint-up(sm) {
+  .container-fluid {
+    padding: 0 2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .container-fluid {
+    padding: 0 8rem;
+  }
+}
+
+.bd-btn-link {
+  text-decoration: none;
+  color: $gray-700;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 4px;
+  &:hover {
+    background: $gray-100;
+    color: $gray-700;
+  }
+}
