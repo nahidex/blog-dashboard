@@ -37,12 +37,18 @@ $custom-colors: (
 
 $font-family-sans-serif: "Hanken Grotesk", system-ui, -apple-system;
 
+// offcanvas
+
 // $offcanvas-color: green;
 $offcanvas-padding-y: 0rem;
 $offcanvas-padding-x: 0rem;
 // $offcanvas-horizontal-width: 300px;
 $offcanvas-border-color: $gray-200;
 // $offcanvas-border-width: 6px;
+
+// card
+$card-border-radius: 0.5rem;
+$card-border-color: trasparent;
 
 // Required
 @import "bootstrap/scss/variables";
@@ -66,7 +72,7 @@ $offcanvas-border-color: $gray-200;
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
+@import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
