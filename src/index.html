@@ -4,16 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog Dashbaord</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@400;500;600;&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
@@ -194,6 +191,46 @@
           </div>
         </div>
         <!-- /STATUS CARDS -->
+
+        <!-- GRAPH AND BLOG LIST -->
+        <div class="row">
+          <div class="col-md-12 col-lg-6 mt-4">
+            <div class="card bd-status-card bd-shadow-xs chart-card">
+              <div class="chart-header row">
+                <div
+                  class="chart-header-items col-sm-6 col-md-3 col-lg-6 col-xl-3"
+                >
+                  <h4>Visitors</h4>
+                  <span>Old vs New</span>
+                </div>
+                <div
+                  class="chart-header-items col-sm-6 col-md-3 col-lg-6 col-xl-3"
+                >
+                  <h4>205K</h4>
+                  <span>New Visitors</span>
+                </div>
+                <div
+                  class="chart-header-items col-sm-6 col-md-3 col-lg-6 col-xl-3"
+                >
+                  <div class="d-flex">
+                    <h4>2.5%</h4>
+                    <img src="images/icons/arrow-up.svg" alt="" />
+                  </div>
+                  <span>Visitor Increased</span>
+                </div>
+                <ul
+                  id="customLegend"
+                  class="custom-legend col-sm-6 col-md-3 col-lg-6 col-xl-3"
+                ></ul>
+              </div>
+              <div class="chartjs-chart">
+                <canvas id="visitorsChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <!-- ./GRAPH AND BLOG LIST -->
       </div>
     </div>
   </body>

@@ -12,11 +12,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "sass-embedded": "^1.77.5",
-    "vite": "^5.4.5"
+    "vite": "^5.4.5",
+    "sass-embedded": "^1.76"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.4"
   }
 }
