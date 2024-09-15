@@ -1,5 +1,3 @@
-Here's the markdown code for your `README.md` file:
-
 ````markdown
 # Blog Dashboard
 
@@ -68,8 +66,3 @@ npm run build
 ### License
 
 This project is licensed under the ISC License.
-
-```
-
-Just copy and paste it into your `README.md` file!
-```
