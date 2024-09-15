@@ -1,4 +1,3 @@
-````markdown
 # Blog Dashboard
 
 A simple dashboard application built using Vite, Bootstrap, and Chart.js.
@@ -21,7 +20,6 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/blog-dashboard.git
    ```
-````
 
 2. Navigate to the project directory:
 
@@ -46,6 +44,7 @@ Before you begin, ensure you have the following installed:
 - **Vite**: Fast and optimized build tool.
 - **Bootstrap 5**: Responsive design with modern styling components.
 - **Chart.js**: Data visualization with customizable charts.
+- **Popper.js**: Tooltips for enhanced UI interaction.
 
 ### Development
 
@@ -62,6 +61,22 @@ To build the project for production, run:
 ```bash
 npm run build
 ```
+
+### Previewing the Build
+
+To preview the production build, run:
+
+```bash
+npm run preview
+```
+
+### Dependencies
+
+- **Vite**: ^5.4.5
+- **Sass-Embedded**: ^1.77.6
+- **Bootstrap**: ^5.3.3
+- **Popper.js**: ^2.11.8
+- **Chart.js**: ^4.4.4
 
 ### License
 
