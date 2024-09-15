@@ -6,6 +6,10 @@ A simple dashboard application built using Vite, Bootstrap, and Chart.js.
 
 This project is a dashboard application designed for managing blog data with easy visualization using Chart.js. It uses Bootstrap for styling and Popper.js for better tooltip management.
 
+### Live Preview
+
+You can view the live preview of the project at [https://nahidex.github.io/blog-dashboard/](https://nahidex.github.io/blog-dashboard/).
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
