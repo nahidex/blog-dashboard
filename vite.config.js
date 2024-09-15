@@ -12,6 +12,7 @@ export default {
       },
     },
   },
+  base: "/blog-dashboard/",
   server: {
     port: 8080,
   },
