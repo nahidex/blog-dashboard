@@ -61,9 +61,24 @@
     }
   }
 }
+@include media-breakpoint-up(sm) {
+  .bd-top-nav-offcanvas-control {
+    display: none;
+  }
+}
 
 @include media-breakpoint-down(sm) {
-  .bd-top-nav-search {
-    display: none;
+  .bd-top-nav {
+    &-search {
+      display: none;
+    }
+    &-userinfo {
+      .notification {
+        padding: 2px 2px;
+      }
+      .user-dropdown {
+        padding: 2px 0px 2px 4px;
+      }
+    }
   }
 }

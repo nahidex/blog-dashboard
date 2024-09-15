@@ -21,14 +21,6 @@
         id="sideNav"
         aria-labelledby="blogDashboardSideNavination"
       >
-        <!-- <div class="offcanvas-header">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div> -->
         <a class="bd-logo" href="#">
           <img src="images/logo.svg" alt="" />
         </a>
@@ -75,6 +67,17 @@
       <div class="container-fluid">
         <!-- TOP NAV -->
         <div class="bd-top-nav">
+          <div class="bd-top-nav-offcanvas-control">
+            <button
+              class="btn p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sideNav"
+              aria-controls="offcanvasExample"
+            >
+              <img src="images/icons/menu.svg" alt="" />
+            </button>
+          </div>
           <div class="bd-top-nav-search">
             <div class="input-group">
               <span class="input-group-text" id="nav-search">
