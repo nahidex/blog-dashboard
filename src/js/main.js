@@ -4,9 +4,19 @@ import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 import * as bootstrap from "bootstrap";
 import { initCounters } from "./counterModule.js";
+import { showPreloader, hidePreloader } from "./preloader.js";
 
 // IIFE to encapsulate the chart setup
 (function () {
+  // Show the preloader immediately when the script runs
+  showPreloader();
+
+  // Wait for the entire page to load
+  window.addEventListener("load", () => {
+    // Hide the preloader and show the main content
+    hidePreloader();
+  });
+
   // counter
   initCounters(".counter-count", 1000);
 
