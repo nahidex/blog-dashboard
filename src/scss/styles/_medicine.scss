@@ -1,0 +1,37 @@
+.bd-medicine-wrapper {
+  max-height: 325px;
+  overflow: auto;
+}
+.bd-medicine {
+  // display: flex;
+
+  .bd-medicine-item {
+    background: $white;
+    border-radius: 8px;
+    padding: 1rem;
+    p {
+      color: $gray-400;
+      font-size: 12px;
+    }
+    span {
+      color: $gray-700;
+      font-size: 14px;
+      em {
+        color: $blue-500;
+        font-weight: 700;
+      }
+    }
+
+    .img-wrapper {
+      // display: flex;
+      // justify-content: center;
+      // width: 100%;
+      // margin-top: 1rem;
+      margin: -12px;
+    }
+    img {
+      max-width: 56px;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,11 +1,8 @@
 .bd-user-card {
-  position: relative;
   img {
-    position: absolute;
-    bottom: 30%;
-    right: -2%;
-    width: 150px;
+    width: 56px;
     height: auto;
+    margin-right: 1rem;
   }
   .card {
     padding: 1.5rem;
@@ -15,9 +12,10 @@
     flex-direction: column;
   }
   .card-heading {
-    margin-bottom: 2.5rem;
+    // margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     h4 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 0;
       color: $gray-500;
       font-weight: 600;
@@ -25,6 +23,7 @@
     }
     span {
       color: $gray-400;
+      font-size: 14px;
     }
   }
   .bd-card-body {
@@ -32,14 +31,20 @@
     .card-stats {
       display: flex;
       margin-right: 1.5rem;
-      align-items: center;
+      align-items: flex-start;
+
       h4 {
-        margin-right: 0.5rem;
-        color: $gray-500;
+        font-size: 16px;
+        margin-bottom: 0;
       }
+
       span {
+        display: block;
         text-wrap: nowrap;
         color: $gray-400;
+        &:nth-child(2) {
+          padding-bottom: 8px;
+        }
       }
     }
   }
@@ -54,63 +59,72 @@
   position: relative;
   img {
     position: absolute;
-    left: 0rem;
-    top: -2rem;
+    left: 1rem;
+    top: -1rem;
+    height: auto;
+    &.appointment-pending {
+      width: 80px;
+    }
+    &.appointment-cancel {
+      width: 64px;
+    }
+    &.appointment-completed {
+      width: 56px;
+    }
+    &.appointment-resheduled {
+      width: 70px;
+      top: -1.75rem;
+    }
   }
-  span {
+  > span {
     color: $gray-400;
+    display: inline-block;
+    margin-bottom: 0.5rem;
   }
   h4 {
     color: $purple;
   }
 }
 
-@include media-breakpoint-up(sm) {
-  .bd-user-card {
-    .card {
-      max-width: 80%;
-    }
-    img {
-      width: 200px;
-      left: 60%;
-      top: -40%;
-    }
-  }
+// @include media-breakpoint-up(sm) {
+//   .bd-user-card {
+//     .card {
+//       max-width: 80%;
+//     }
+//   }
 
-  .bd-status-card {
-    margin-top: 3rem;
-    min-height: 175px;
-  }
-}
+//   .bd-status-card {
+//     margin-top: 3rem;
+//     min-height: 175px;
+//   }
+// }
 
-@include media-breakpoint-up(lg) {
-  .bd-user-card {
-    .card {
-      max-width: 90%;
-    }
-    img {
-      left: 73%;
-      // display: none;
-    }
-  }
-}
+// @include media-breakpoint-up(lg) {
+//   .bd-user-card {
+//     .card {
+//       max-width: 90%;
+//     }
+//     img {
+//       left: 73%;
+//       // display: none;
+//     }
+//   }
+// }
 
-@include media-breakpoint-up(xl) {
-  .bd-user-card {
-    img {
-      width: 210px;
-      left: 80%;
-      top: -50%;
-    }
-  }
-}
+// @include media-breakpoint-up(xl) {
+//   .bd-user-card {
+//     img {
+//       width: 210px;
+//       left: 80%;
+//       top: -50%;
+//     }
+//   }
+// }
 
 @include media-breakpoint-up(xxl) {
   .bd-user-card {
     img {
-      width: 240px;
-      left: 63%;
-      top: -59%;
+      // width: 56px;
     }
   }
 
