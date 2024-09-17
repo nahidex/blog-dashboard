@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Dashbaord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="assets/index-DyAIcrNp.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-CMZ1v9LZ.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <div
+        class="offcanvas offcanvas-start bd-sidebar"
+        tabindex="-1"
+        id="sideNav"
+        aria-labelledby="blogDashboardSideNavination"
+      >
+        <a class="bd-logo" href="#">
+          <img
+            src="data:image/svg+xml,%3csvg%20width='30'%20height='29'%20viewBox='0%200%2030%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_6_99)'%3e%3cpath%20d='M1.65759%2017.9953C1.65759%2016.677%201.91725%2015.3715%202.42178%2014.1535C2.92631%2012.9355%203.66578%2011.8288%204.59801%2010.8966C5.53024%209.96434%206.63692%209.22485%207.85492%208.72032C9.07298%208.21585%2010.3784%207.95615%2011.6968%207.95615V17.9953H1.65759Z'%20fill='%233C71FD'/%3e%3cpath%20d='M1.65759%2017.9953C1.65759%2019.3137%201.91725%2020.6192%202.42178%2021.8372C2.92631%2023.0552%203.66578%2024.1619%204.59801%2025.0941C5.53024%2026.0264%206.63692%2026.7659%207.85492%2027.2704C9.07298%2027.7749%2010.3784%2028.0345%2011.6968%2028.0345V17.9953H1.65759Z'%20fill='%23638EFF'/%3e%3cpath%20d='M21.7358%2017.9953C21.7358%2019.3137%2021.4764%2020.6192%2020.9719%2021.8372C20.4674%2023.0552%2019.7279%2024.1619%2018.7955%2025.0941C17.8633%2026.0264%2016.7566%2026.7659%2015.5386%2027.2704C14.3206%2027.7749%2013.0151%2028.0345%2011.6968%2028.0345V17.9953H21.7358Z'%20fill='%23ACC3FF'/%3e%3cpath%20d='M27.9258%209.32238C27.9258%2013.4854%2024.5508%2016.8602%2020.3879%2016.8602H12.8501V9.32238C12.8501%205.15936%2016.2249%201.78455%2020.3879%201.78455C24.5508%201.78455%2027.9258%205.15936%2027.9258%209.32238Z'%20fill='%23FF7917'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_6_99'%3e%3crect%20width='28.5833'%20height='28'%20fill='white'%20transform='translate(0.5%200.909546)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            alt=""
+          />
+        </a>
+        <div class="bd-sidebar-nav">
+          <ul>
+            <li>
+              <a
+                class="active"
+                data-bs-toggle="tooltip"
+                data-bs-title="Dashbaord"
+                href="#"
+              >
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_367_7'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='24'%20height='24'%3e%3crect%20width='24'%20height='24'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_367_7)'%3e%3cpath%20d='M13.25%209V3.5H20.5V9H13.25ZM3.5%2012.5V3.5H10.75V12.5H3.5ZM13.25%2020.5V11.5H20.5V20.5H13.25ZM3.5%2020.5V15H10.75V20.5H3.5ZM5%2011H9.25V5H5V11ZM14.75%2019H19V13H14.75V19ZM14.75%207.5H19V5H14.75V7.5ZM5%2019H9.25V16.5H5V19Z'%20fill='%23878787'/%3e%3c/g%3e%3c/svg%3e"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="My Favorite">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_367_37'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='24'%20height='25'%3e%3crect%20y='0.499969'%20width='24'%20height='24'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_367_37)'%3e%3cpath%20d='M7.875%207.24622L10.5787%203.69797C10.7582%203.4578%2010.9714%203.28147%2011.2183%203.16897C11.4651%203.0563%2011.7257%202.99997%2012%202.99997C12.2743%202.99997%2012.5349%203.0563%2012.7817%203.16897C13.0286%203.28147%2013.2417%203.4578%2013.4212%203.69797L16.125%207.24622L20.2595%208.64222C20.6545%208.76922%2020.9625%208.99314%2021.1835%209.31397C21.4047%209.63497%2021.5152%209.98947%2021.5152%2010.3775C21.5152%2010.5566%2021.4891%2010.7352%2021.4368%2010.9132C21.3844%2011.0912%2021.2984%2011.2618%2021.1788%2011.425L18.4865%2015.1615L18.5865%2019.127C18.6032%2019.6535%2018.4296%2020.0972%2018.0658%2020.4582C17.7021%2020.8194%2017.2783%2021%2016.7943%2021C16.7801%2021%2016.6128%2020.9781%2016.2923%2020.9345L12%2019.7037L7.70775%2020.9345C7.62442%2020.9678%207.53842%2020.9871%207.44975%2020.9922C7.36108%2020.9974%207.27975%2021%207.20575%2021C6.71725%2021%206.29225%2020.8194%205.93075%2020.4582C5.56925%2020.0972%205.39683%2019.6535%205.4135%2019.127L5.5135%2015.1365L2.8365%2011.425C2.71683%2011.2611%202.63083%2011.0899%202.5785%2010.9112C2.52617%2010.7324%202.5%2010.5536%202.5%2010.375C2.5%209.9978%202.60983%209.64705%202.8295%209.32272C3.04917%208.99839%203.356%208.76839%203.75%208.63272L7.875%207.24622ZM8.802%208.53847L4.23075%2010.0615C4.13458%2010.0935%204.06892%2010.1592%204.03375%2010.2587C3.99842%2010.3581%204.01283%2010.4494%204.077%2010.5327L7.023%2014.6905L6.9135%2019.1577C6.907%2019.2667%206.94542%2019.3532%207.02875%2019.4172C7.11208%2019.4814%207.20508%2019.4975%207.30775%2019.4655L12%2018.148L16.6923%2019.4905C16.7949%2019.5225%2016.8879%2019.5064%2016.9712%2019.4422C17.0546%2019.3782%2017.093%2019.2917%2017.0865%2019.1827L16.977%2014.6905L19.923%2010.5827C19.9872%2010.4994%2020.0016%2010.4081%2019.9663%2010.3087C19.9311%2010.2092%2019.8654%2010.1435%2019.7693%2010.1115L15.198%208.53847L12.2405%204.63472C12.1827%204.55122%2012.1025%204.50947%2012%204.50947C11.8975%204.50947%2011.8173%204.55122%2011.7595%204.63472L8.802%208.53847Z'%20fill='%23878787'/%3e%3c/g%3e%3c/svg%3e"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Health Tips">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_367_43'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='24'%20height='24'%3e%3crect%20y='-6.10352e-05'%20width='24'%20height='24'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_367_43)'%3e%3cpath%20d='M15.8463%2012.6922L11.8885%208.86344C11.4104%208.40194%2011.0081%207.88819%2010.6818%207.32219C10.3554%206.75619%2010.1923%206.13977%2010.1923%205.47294C10.1923%204.64711%2010.4814%203.94519%2011.0595%203.36719C11.6375%202.78902%2012.3394%202.49994%2013.1653%202.49994C13.7051%202.49994%2014.2035%202.63011%2014.6605%202.89044C15.1177%203.15061%2015.5129%203.48202%2015.8463%203.88469C16.1796%203.48202%2016.5748%203.15061%2017.0318%202.89044C17.4888%202.63011%2017.9872%202.49994%2018.527%202.49994C19.3529%202.49994%2020.0548%202.78902%2020.6328%203.36719C21.2109%203.94519%2021.5%204.64711%2021.5%205.47294C21.5%206.13977%2021.3394%206.75619%2021.0183%207.32219C20.6971%207.88819%2020.2974%208.40194%2019.8193%208.86344L15.8463%2012.6922ZM15.8463%2010.6039L18.7058%207.83269C19.0416%207.50319%2019.3413%207.14486%2019.6048%206.75769C19.8683%206.37052%2020%205.94227%2020%205.47294C20%205.06144%2019.8574%204.71311%2019.572%204.42794C19.2869%204.14261%2018.9385%203.99994%2018.527%203.99994C18.2104%203.99994%2017.9206%204.08261%2017.6578%204.24794C17.3949%204.41344%2017.1629%204.62311%2016.9615%204.87694L15.8463%206.23444L14.7308%204.87694C14.5294%204.62311%2014.2974%204.41344%2014.0345%204.24794C13.7719%204.08261%2013.4821%203.99994%2013.1653%203.99994C12.7538%203.99994%2012.4054%204.14261%2012.1203%204.42794C11.8349%204.71311%2011.6923%205.06144%2011.6923%205.47294C11.6923%205.94227%2011.824%206.37052%2012.0875%206.75769C12.351%207.14486%2012.6507%207.50319%2012.9865%207.83269L15.8463%2010.6039ZM6.70203%2018.5769L13.9595%2020.6307L19.9288%2018.7807C19.8776%2018.5539%2019.7719%2018.3799%2019.6115%2018.2587C19.4512%2018.1375%2019.2698%2018.0769%2019.0673%2018.0769H14.17C13.7337%2018.0769%2013.3629%2018.0603%2013.0578%2018.0269C12.7526%2017.9936%2012.4391%2017.9205%2012.1173%2017.8077L9.85978%2017.0614L10.3038%2015.5922L12.3288%2016.2962C12.6314%2016.3987%2012.9809%2016.4685%2013.377%2016.5057C13.7732%2016.5429%2014.3366%2016.5666%2015.0673%2016.5769C15.0673%2016.3294%2015.0115%2016.1159%2014.9%2015.9364C14.7885%2015.7569%2014.6417%2015.6358%2014.4595%2015.5729L8.65778%2013.4422C8.63844%2013.4359%208.62078%2013.4311%208.60478%2013.4279C8.58878%2013.4246%208.57119%2013.4229%208.55203%2013.4229H6.70203V18.5769ZM1.70203%2021.4999V11.9232H8.54053C8.64553%2011.9232%208.75186%2011.9347%208.85953%2011.9577C8.96736%2011.9809%209.06736%2012.0078%209.15953%2012.0384L14.9865%2014.1847C15.4404%2014.3525%2015.8173%2014.6496%2016.1173%2015.0759C16.4173%2015.5023%2016.5673%2016.0026%2016.5673%2016.5769H19.0673C19.7853%2016.5769%2020.3702%2016.8087%2020.822%2017.2722C21.274%2017.7355%2021.5%2018.3371%2021.5%2019.0769V19.8844L14.0095%2022.2114L6.70203%2020.1269V21.4999H1.70203ZM3.20203%2019.9999H5.20203V13.4229H3.20203V19.9999Z'%20fill='%23878787'/%3e%3c/g%3e%3c/svg%3e"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Telemedicine">
+                <img src="assets/telemedicine-CLbeF4s7.svg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-title="Phone Consultation"
+              >
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_367_53'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='24'%20height='24'%3e%3crect%20y='-9.15527e-05'%20width='24'%20height='24'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_367_53)'%3e%3cpath%20d='M12.3463%2012.0384V4.40391C12.3463%204.14774%2012.4331%203.93308%2012.6067%203.75991C12.7804%203.58658%2012.9957%203.49991%2013.2525%203.49991H19.5975C19.8543%203.49991%2020.0689%203.58658%2020.2413%203.75991C20.4138%203.93308%2020.5%204.14774%2020.5%204.40391V8.67291C20.5%208.92907%2020.4133%209.14374%2020.24%209.31691C20.0668%209.49024%2019.8522%209.57691%2019.596%209.57691H14.8077L12.3463%2012.0384ZM13.8462%208.07691H19V4.99991H13.8462V8.07691ZM19.4402%2020.4999C17.5557%2020.4999%2015.6625%2020.0617%2013.7605%2019.1854C11.8587%2018.3091%2010.1113%2017.0729%208.51825%2015.4769C6.92542%2013.8807%205.69083%2012.1332%204.8145%2010.2344C3.93817%208.33574%203.5%206.44416%203.5%204.55966C3.5%204.25683%203.6%204.00449%203.8%203.80266C4%203.60082%204.25%203.49991%204.55%203.49991H7.8115C8.064%203.49991%208.28675%203.58233%208.47975%203.74716C8.67275%203.91183%208.7955%204.11533%208.848%204.35766L9.42125%207.29991C9.46092%207.57291%209.45258%207.80749%209.39625%208.00366C9.33975%208.19983%209.23842%208.36457%209.09225%208.49791L6.78275%2010.7462C7.15442%2011.4268%207.57908%2012.0707%208.05675%2012.6779C8.53425%2013.2849%209.05125%2013.8647%209.60775%2014.4172C10.1564%2014.966%2010.7397%2015.4757%2011.3577%2015.9462C11.9757%2016.4167%2012.6431%2016.8545%2013.3598%2017.2597L15.6038%2014.9962C15.7603%2014.8333%2015.9498%2014.7192%2016.1723%2014.6537C16.3946%2014.5883%2016.6257%2014.5723%2016.8655%2014.6057L19.6423%2015.1712C19.8948%2015.2378%2020.1008%2015.3667%2020.2605%2015.5577C20.4202%2015.7487%2020.5%2015.9653%2020.5%2016.2077V19.4499C20.5%2019.7499%2020.3991%2019.9999%2020.1973%2020.1999C19.9954%2020.3999%2019.7431%2020.4999%2019.4402%2020.4999ZM6.073%209.32691L7.85775%207.61916C7.88975%207.59349%207.91058%207.55824%207.92025%207.51341C7.92992%207.46857%207.92833%207.42691%207.9155%207.38841L7.48075%205.15366C7.46792%205.10249%207.4455%205.06407%207.4135%205.03841C7.3815%205.01274%207.33983%204.99991%207.2885%204.99991H5.15C5.1115%204.99991%205.07942%205.01274%205.05375%205.03841C5.02825%205.06407%205.0155%205.09616%205.0155%205.13466C5.06667%205.81799%205.1785%206.51216%205.351%207.21716C5.52333%207.92233%205.764%208.62558%206.073%209.32691ZM14.773%2017.9692C15.4358%2018.2782%2016.1272%2018.5144%2016.847%2018.6779C17.567%2018.8412%2018.2397%2018.9383%2018.8652%2018.9692C18.9037%2018.9692%2018.9358%2018.9563%2018.9615%2018.9307C18.9872%2018.905%2019%2018.8729%2019%2018.8344V16.7307C19%2016.6793%2018.9872%2016.6377%2018.9615%2016.6057C18.9358%2016.5737%2018.8974%2016.5512%2018.8462%2016.5384L16.7462%2016.1114C16.7077%2016.0986%2016.6741%2016.097%2016.6453%2016.1067C16.6164%2016.1163%2016.5859%2016.1372%2016.5538%2016.1692L14.773%2017.9692Z'%20fill='%23878787'/%3e%3c/g%3e%3c/svg%3e"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <a class="sidebar-logout" href="#">
+            <img
+              src="data:image/svg+xml,%3csvg%20width='18'%20height='19'%20viewBox='0%200%2018%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.25%202.8728H14.25C14.6478%202.8728%2015.0294%203.03084%2015.3107%203.31214C15.592%203.59345%2015.75%203.97498%2015.75%204.3728V14.8728C15.75%2015.2706%2015.592%2015.6522%2015.3107%2015.9335C15.0294%2016.2148%2014.6478%2016.3728%2014.25%2016.3728H11.25'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M7.5%2013.3728L11.25%209.6228L7.5%205.8728'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M11.25%209.6228H2.25'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <!-- TOP NAV -->
+        <div class="bd-top-nav">
+          <div class="bd-top-nav-offcanvas-control">
+            <button
+              class="btn p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sideNav"
+              aria-controls="offcanvasExample"
+            >
+              <img
+                src="data:image/svg+xml,%3csvg%20width='25'%20height='25'%20viewBox='0%200%2025%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3.76019%2017.836V16.3363H20.7602V17.836H3.76019ZM3.76019%2012.9515V11.4515H20.7602V12.9515H3.76019ZM3.76019%208.06677V6.56702H20.7602V8.06677H3.76019Z'%20fill='%23878787'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="bd-top-nav-search">
+            <div class="input-group">
+              <span class="input-group-text" id="nav-search">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.6335%2013.5762C10.579%2013.5762%2012.9668%2011.1884%2012.9668%208.24288C12.9668%205.29736%2010.579%202.90955%207.6335%202.90955C4.68799%202.90955%202.30017%205.29736%202.30017%208.24288C2.30017%2011.1884%204.68799%2013.5762%207.6335%2013.5762Z'%20stroke='%23C5C7D3'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.3001%2014.9095L11.4001%2012.0095'%20stroke='%23C5C7D3'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                  alt=""
+                />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for anything.."
+                aria-label="Search"
+                aria-describedby="nav-search"
+              />
+            </div>
+          </div>
+          <div class="bd-top-nav-calender">
+            <button type="button" class="btn btn-link bd-btn-link">
+              <img
+                class="calendar-icon"
+                src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19%204.12915H5C3.89543%204.12915%203%205.02458%203%206.12915V20.1292C3%2021.2337%203.89543%2022.1292%205%2022.1292H19C20.1046%2022.1292%2021%2021.2337%2021%2020.1292V6.12915C21%205.02458%2020.1046%204.12915%2019%204.12915Z'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M16%202.12915V6.12915'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M8%202.12915V6.12915'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M3%2010.1292H21'%20stroke='%23878787'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                alt=""
+              />
+              <span class="day">Today </span>
+              <span>October 29</span>
+              <img
+                class="chevron-down"
+                src="data:image/svg+xml,%3csvg%20width='17'%20height='16'%20viewBox='0%200%2017%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.18567%206.00952L8.18567%2010.0095L12.1857%206.00952'%20stroke='%23C5C7D3'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="bd-langualge-handler">
+            <button
+              data-bs-toggle="dropdown"
+              class="btn btn-link bd-btn-link user-dropdown"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='17'%20height='16'%20viewBox='0%200%2017%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.18567%206.00952L8.18567%2010.0095L12.1857%206.00952'%20stroke='%23C5C7D3'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bd-dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          <div class="bd-top-nav-userinfo">
+            <button class="btn btn-link bd-btn-link notification">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_1_58)'%3e%3cpath%20d='M12.3002%206.24288C12.3002%205.18202%2011.8787%204.1646%2011.1286%203.41445C10.3785%202.66431%209.36104%202.24288%208.30017%202.24288C7.23931%202.24288%206.22189%202.66431%205.47174%203.41445C4.7216%204.1646%204.30017%205.18202%204.30017%206.24288C4.30017%2010.9095%202.30017%2012.2429%202.30017%2012.2429H14.3002C14.3002%2012.2429%2012.3002%2010.9095%2012.3002%206.24288Z'%20stroke='%23C5C7D3'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M9.45352%2014.9095C9.33631%2015.1116%209.16808%2015.2793%208.96567%2015.3959C8.76326%2015.5125%208.53377%2015.5738%208.30018%2015.5738C8.0666%2015.5738%207.83711%2015.5125%207.6347%2015.3959C7.43229%2015.2793%207.26406%2015.1116%207.14685%2014.9095'%20stroke='%23C5C7D3'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_58'%3e%3crect%20width='16'%20height='16'%20fill='white'%20transform='translate(0.300171%200.909546)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+              />
+              <span>8</span>
+            </button>
+            <button
+              data-bs-toggle="dropdown"
+              class="btn btn-link bd-btn-link user-dropdown"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='17'%20height='16'%20viewBox='0%200%2017%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.18567%206.00952L8.18567%2010.0095L12.1857%206.00952'%20stroke='%23C5C7D3'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bd-dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /TOP NAV -->
+
+        <!-- Welcome Message -->
+        <div class="bd-welcome-message">
+          <div class="d-flex">
+            <h2>Welcome Back!</h2>
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </div>
+          <p>Good Evening!</p>
+        </div>
+        <!-- /Welcome Message -->
+
+        <!-- STATUS CARDS -->
+        <div class="container-fuild">
+          <div class="row">
+            <div class="col-md-12 col-xxl-4">
+              <div class="bd-user-card">
+                <div class="card shadow-lg">
+                  <div class="card-heading">
+                    <h4>Upcoming Appointments</h4>
+                    <span>Scheduled Appointments</span>
+                  </div>
+                  <div class="bd-card-body">
+                    <div class="card-stats">
+                      <img src="assets/doctor-DOhSSwoH.png" alt="" />
+                      <div>
+                        <h4>Dr. Samantha W.</h4>
+                        <span>Nephrologist</span>
+                        <span class="text-primary">Today @10:00 PM</span>
+                        <span>Greenfield Clinic, NY, USA</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <img src="images/shceduled.png" alt="" /> -->
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xxl-2 d-flex">
+              <div class="card bd-status-card bd-shadow-xs">
+                <img
+                  class="appointment-pending"
+                  src="assets/hourglass-C5Pq57Fb.png"
+                  alt=""
+                />
+                <span>Appointment Pending</span>
+                <h4 class="mb-0 text-primary counter-count">5</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xxl-2 d-flex">
+              <div class="card bd-status-card bd-shadow-xs">
+                <img
+                  class="appointment-cancel"
+                  src="assets/close-BJ6lw1IQ.png"
+                  alt=""
+                />
+                <span>Appointment Cancelled</span>
+                <h4 class="mb-0 text-danger counter-count">10</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xxl-2 d-flex">
+              <div class="card bd-status-card bd-shadow-xs">
+                <img
+                  class="appointment-completed"
+                  src="assets/completed-C3IdB3A1.png"
+                  alt=""
+                />
+                <span>Appointment Completed</span>
+                <h4 class="mb-0 text-success counter-count">25</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xxl-2 d-flex">
+              <div class="card bd-status-card bd-shadow-xs">
+                <img
+                  class="appointment-resheduled"
+                  src="assets/rescheduled-CCR85yHG.png"
+                  alt=""
+                />
+                <span>Appointment Rescheduled</span>
+                <h4 class="mb-0 text-warning counter-count">30</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /STATUS CARDS -->
+
+        <!-- GRAPH AND BLOG LIST -->
+        <div class="row mt-4 mb-4">
+          <div class="col-xl-8">
+            <h5 class="">List of appointments</h5>
+
+            <div class="bd-appointment-list-wrapper">
+              <div class="bd-calender-wrapper">
+                <div id="color-calendar"></div>
+              </div>
+              <div class="appointment-list-wrapper">
+                <ul class="appointment-list gap-2 d-flex flex-column">
+                  <li class="appointment-list-item">
+                    <img src="assets/doctor-DOhSSwoH.png" alt="" />
+                    <div class="right-items">
+                      <div class="item-meta">
+                        <h5>Dr. Samatha W.</h5>
+                        <p>Cardiologist</p>
+                        <p class="text-primary mt-2">June 15, 2024 - 2:00 PM</p>
+                      </div>
+                      <div>
+                        <span class="status pending">Pending</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="appointment-list-item">
+                    <img src="assets/doctor-DOhSSwoH.png" alt="" />
+                    <div class="right-items">
+                      <div class="item-meta">
+                        <h5>Dr. Samatha W.</h5>
+                        <p>Cardiologist</p>
+                        <p class="text-primary mt-2">June 15, 2024 - 2:00 PM</p>
+                      </div>
+                      <div>
+                        <span class="status completed">Completed</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="appointment-list-item">
+                    <img src="assets/doctor-DOhSSwoH.png" alt="" />
+                    <div class="right-items">
+                      <div class="item-meta">
+                        <h5>Dr. Samatha W.</h5>
+                        <p>Cardiologist</p>
+                        <p class="text-primary mt-2">June 15, 2024 - 2:00 PM</p>
+                      </div>
+                      <div>
+                        <span class="status rescheduled">Rescheduled</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="appointment-list-item">
+                    <img src="assets/doctor-DOhSSwoH.png" alt="" />
+                    <div class="right-items">
+                      <div class="item-meta">
+                        <h5>Dr. Samatha W.</h5>
+                        <p>Cardiologist</p>
+                        <p class="text-primary mt-2">June 15, 2024 - 2:00 PM</p>
+                      </div>
+                      <div>
+                        <span class="status cancelled">cancelled</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <h5>Upcoming Medince to Take</h5>
+            <div class="bd-medicine-wrapper">
+              <p class="mb-1">Today • 2:00PM</p>
+              <div class="bd-medicine d-flex gap-2 flex-column">
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/D3-DeLQBpLb.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img class="img-fluid" src="assets/c-Dz6XwOl3.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/cap-DGljce3z.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 text-muted">Today • 9:00PM</p>
+              <div class="bd-medicine d-flex gap-2 flex-column">
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/D3-DeLQBpLb.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/D3-DeLQBpLb.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="bd-medicine-item d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-between gap-3 align-items-center"
+                  >
+                    <p class="mb-0">01</p>
+                    <div class="d-flex justify-content-between">
+                      <span class="mx-3">Omega 3</span>
+                      <span><em>2.5</em>&nbsp;mg</span>
+                    </div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/D3-DeLQBpLb.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
